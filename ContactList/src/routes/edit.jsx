@@ -36,7 +36,7 @@ export default function EditContact() {
         <input
           type="text"
           name="twitter"
-          placeholder="@something something.com"
+          placeholder="@something something "
           defaultValue={contact.twitter}
         />
       </label>
@@ -52,12 +52,9 @@ export default function EditContact() {
       </label>
       <label>
         <span>Address</span>
-        <input
-          placeholder=""
-          aria-label="Avatar URL"
-          type="text"
-          name="avatar"
-          defaultValue={contact.avatar}
+        <textarea
+          name="notes"
+          defaultValue={contact.notes}
         />
       </label>
       <p>
